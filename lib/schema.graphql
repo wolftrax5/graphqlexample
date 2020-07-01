@@ -57,5 +57,5 @@ type Mutation {
   "Elimina un Estudiante"
   deleteStudent(id: ID!): String
   "Agrega una persona a un curso"
-  addPeople(courseId: ID!, personId: ID!): Course
+   (courseId: ID!, personId: ID!): Course
 }
