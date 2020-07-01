@@ -1,3 +1,9 @@
+"Valida los tipos de nivel"
+type Level {
+  principiante
+  intermedio
+  avanzado
+}
 type Course {
   _id: ID!
   title: String!
@@ -5,6 +11,7 @@ type Course {
   descrition: String!
   topic: String
   people: [Student]
+  level: Level
 }
 type Student {
   _id: ID!
@@ -27,12 +34,14 @@ input CourseInput {
   teacher: String
   descrition: String!
   topic: String
+  level: Level
 }
 input CourseEditInput {
   title: String
   teacher: String
   descrition: String
   topic: String
+  level: Level
 }
 
 input StudentInput {
